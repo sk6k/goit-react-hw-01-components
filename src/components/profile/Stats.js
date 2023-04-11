@@ -1,20 +1,20 @@
-import './Stats.scss';
+import css from './Stats.module.css';
 import PropTypes from 'prop-types';
 
 const Stats = ({ stats: { followers, views, likes } }) => {
   return (
-    <ul className="stats">
-      <li className="stats-item">
-        <span className="label">Followers</span>
-        <span className="quantity">{followers}</span>
+    <ul className={css.stats}>
+      <li className={css['stats-item']}>
+        <span className={css.label}>Followers</span>
+        <span className={css.quantity}>{followers}</span>
       </li>
-      <li className="stats-item">
-        <span className="label">Views</span>
-        <span className="quantity">{views}</span>
+      <li className={css['stats-item']}>
+        <span className={css.label}>Views</span>
+        <span className={css.quantity}>{views}</span>
       </li>
-      <li className="stats-item">
-        <span className="label">Likes</span>
-        <span className="quantity">{likes}</span>
+      <li className={css['stats-item']}>
+        <span className={css.label}>Likes</span>
+        <span className={css.quantity}>{likes}</span>
       </li>
     </ul>
   );
